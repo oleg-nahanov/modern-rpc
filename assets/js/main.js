@@ -81,6 +81,7 @@
 
 	new onw.Slider('.com-slider', {arrows: !0})
 	new onw.Slider('.work-slider', {arrows: !0})
+	new onw.Slider('.samples-slider', {arrows: !0})
 
 	const modal = new tingle.modal({
 		footer: !0,
