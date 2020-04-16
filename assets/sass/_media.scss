@@ -3,7 +3,44 @@
 }
 
 @media only screen and (max-width : 1200px) {
+	h1, .h1 {
+		font-size: 50px;
+	}
 
+	.logo-image {
+		width: 83px;
+		height: 53px;
+	}
+
+	.logo-name {
+		font-size: 14px;
+	}
+
+	.location {
+		.address {
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+
+	.phones {
+		.tel {
+			span {
+				font-size: 16px;
+			}
+			a {
+				font-size: 26px;
+			}
+		}
+	}
+
+	.form .buttons button {
+	    font-size: 18px;
+	}
+
+	.com.com-ru img {
+	    max-width: 650px;
+	}
 }
 
 

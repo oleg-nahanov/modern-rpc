@@ -21,7 +21,7 @@ body {
     font-size: 18px;
     font-weight: 400;
 	line-height: 1.4;
-	//letter-spacing: 0.05em;
+	letter-spacing: 0.04em;
 	min-height: 100vh;
 	user-select: none;
 	background: $white;
@@ -134,13 +134,17 @@ h1, .h1, h2, .h2, h3, .h3 {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 1.2;
-	letter-spacing: 0.13em;
+	//letter-spacing: 1px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	color: inherit;
 	span, strong, b {
 		color: $red;
 	}
+}
+
+h1, .h1 {
+	font-size: 56px;
 }
 
 h3, .h3 {
@@ -173,7 +177,7 @@ strong, .strong {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
-	letter-spacing: 0.03em;
+	//letter-spacing: 0.03em;
 	padding: 5px 30px;
 	position: relative;
 	box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.2);
@@ -181,7 +185,7 @@ strong, .strong {
 	margin: 10px 0;
 	cursor: pointer;
 	&.btn-small {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	&:hover {
 		background: linear-gradient(180deg, darken(#72CDF4, 5%) 0%, darken(#4C92B5, 5%) 100%, darken(#4A8EB1, 5%) 100%);
@@ -281,7 +285,7 @@ strong, .strong {
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 40px;
-			letter-spacing: 0.13em;
+			//letter-spacing: 1px;
 			text-transform: uppercase;
 			text-decoration: none;
 			color: $white;
@@ -362,8 +366,8 @@ strong, .strong {
 .logo-name {
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 26px;
-	letter-spacing: 0.04em;
+	line-height: 1.3;
+	//letter-spacing: 0.04em;
 	text-transform: uppercase;
 	span {
 		display: block;
@@ -382,8 +386,8 @@ strong, .strong {
 	.address {
 		@extend %flex;
 		font-size: 18px;
-		line-height: 23px;
-		letter-spacing: 0.04em;
+		line-height: 1.3;
+		//letter-spacing: 0.04em;
 		color: $gray;
 		margin-bottom: 10px;
 		position: relative;
@@ -397,7 +401,7 @@ strong, .strong {
 		a {
 			font-size: 22px;
 			line-height: 28px;
-			letter-spacing: 0.04em;
+			//letter-spacing: 0.04em;
 			color: $red;
 			text-decoration: none;
 			border-bottom: 1px dashed transparent;
@@ -423,13 +427,13 @@ strong, .strong {
 		span {
 			font-size: 18px;
 			line-height: 1;
-			letter-spacing: 0.04em;
+			//letter-spacing: 0.04em;
 			text-align: right;
 		}
 		color: $gray;
 		a {
 			font-weight: bold;
-			font-size: 36px;
+			font-size: 32px;
 			line-height: 1;
 			margin-left: 10px;
 			//margin-bottom: 8px;
@@ -479,10 +483,10 @@ strong, .strong {
 
 .home-desc {
 	font-family: BebasNeue;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 36px;
 	line-height: 1.2;
-	letter-spacing: 0.13em;
+	//letter-spacing: 1px;
 	text-transform: uppercase;
 	color: $gray;
 }
@@ -493,7 +497,7 @@ strong, .strong {
 	font-size: 26px;
 	line-height: 30px;
 	margin-bottom: 20px;
-	letter-spacing: 0.04em;
+	//letter-spacing: 0.04em;
 	color: $black;
 }
 
@@ -525,16 +529,18 @@ strong, .strong {
 	.agree {
 		@extend %flex;
 		justify-content: flex-start;
+		align-items: flex-start;
 		position: absolute;
 		width: 100%;
 		left: 40px;
 		bottom: -30px;
 		font-size: 13px;
-		line-height: 30px;
-		letter-spacing: 0.04em;
+		line-height: 1.3;
+		//letter-spacing: 0.04em;
 		cursor: pointer;
 		span {
 			color: rgba($black, 0.6);
+			text-align: left
 		}
 		input {
 			margin-right: 5px;
@@ -563,7 +569,6 @@ strong, .strong {
 			position: relative;
 			left: unset;
 			bottom: -10px;
-			white-space: nowrap;
 		}
 	}
 }
@@ -581,14 +586,14 @@ strong, .strong {
 	font-size: 24px;
 	line-height: 1.1;
 	margin-bottom: 20px;
-	letter-spacing: 0.13em;
+	//letter-spacing: 1px;
 	color: $gray;
 }
 
 .stock-select {
 	font-size: 22px;
 	line-height: 28px;
-	letter-spacing: 0.13em;
+	//letter-spacing: 1px;
 	margin-top: 30px;
 	color: $red;
 }
@@ -604,7 +609,7 @@ strong, .strong {
 			color: $gray;
 			font-size: 18px;
 			line-height: 23px;
-			letter-spacing: 0.04em;
+			//letter-spacing: 0.04em;
 			padding: 5px 10px;
 			margin: 0 10px;
 			cursor: pointer;
@@ -698,20 +703,21 @@ strong, .strong {
 .stock-title {
 	font-size: 18px;
 	line-height: 1.2;
-	letter-spacing: 0.04em;
+	//letter-spacing: 0.04em;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
 .stock-desc {
 	font-size: 18px;
 	line-height: 1.2;
-	letter-spacing: 0.03em;
+	//letter-spacing: 0.03em;
 	color: #5F5F5F;
 }
 .stock-image {
 	img {
 		max-width: 100%;
 		margin-top: 20px;
+		filter: drop-shadow(6px 6px 6px $gray);
 	}
 }
 .stock-item-articles {
@@ -758,7 +764,7 @@ strong, .strong {
 		text-decoration: underline;
 		cursor: pointer;
 		margin-bottom: 10px;
-		letter-spacing: 0.04em;
+		//letter-spacing: 0.04em;
 	}
 }
 
@@ -802,8 +808,29 @@ strong, .strong {
 	}
 }
 
-
-
+.stock-item {
+	.stock-title, .stock-desc {
+		opacity: 0;
+	}
+	.stock-item-articles {
+		opacity: 0;
+		.slider-control {
+			margin-top: 10px;
+			&.prev {
+				left: -36px;
+			}
+			&.next {
+				right: -36px;
+			}
+		}
+	}
+	&.active {
+		.stock-item-articles,
+		.stock-title, .stock-desc {
+			opacity: 1;
+		}
+	}
+}
 
 .video {
 	color: $white;
@@ -822,6 +849,7 @@ strong, .strong {
 		left: 0;
 		content: "";
 		z-index: 0;
+		background: rgba($black, .2);
 		backdrop-filter: blur(8px);
 	}
 	&.active {
@@ -836,8 +864,8 @@ strong, .strong {
 		width: 65%;
 		margin: 50px auto;
 		line-height: 1;
-		letter-spacing: 0.13em;
-		font-size: 40px;
+		//letter-spacing: 1px;
+		font-size: 46px;
 		position: relative;
 		z-index: 5;
 		text-shadow: 1px 1px 1px $black;
@@ -936,8 +964,8 @@ strong, .strong {
 		}
 		p {
 			font-size: 18px;
-			line-height: 30px;
-			letter-spacing: 0.04em;
+			line-height: 1.4;
+			//letter-spacing: 0.04em;
 			margin-bottom: 20px;
 			margin-right: 20px;
 		}
@@ -1023,7 +1051,7 @@ strong, .strong {
 	p {
 		font-size: 18px;
 		line-height: 1.4;
-		letter-spacing: 0.04em;
+		//letter-spacing: 0.04em;
 		margin-right: 100px;
 	}
 }
@@ -1039,7 +1067,7 @@ strong, .strong {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 36px;
-	letter-spacing: 0.13em;	
+	//letter-spacing: 1px;	
 }
 .b-check {
 	display: inline-block;
@@ -1084,7 +1112,7 @@ strong, .strong {
 			font-weight: 700;
 			font-size: 36px;
 			line-height: 1;
-			letter-spacing: 0.13em;
+			//letter-spacing: 1px;
 			color: $red;
 			margin-right: 10px;
 		}
@@ -1169,7 +1197,7 @@ strong, .strong {
 	color: $white;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 0.04em;
+	//letter-spacing: 0.04em;
 }
 
 .foot-line {

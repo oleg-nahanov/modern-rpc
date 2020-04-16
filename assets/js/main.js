@@ -37,11 +37,11 @@
 			new onw.Slider('.stock-slider', {dots: nav})
 
 			$_('.stock-item').forEach(el => {
-				new onw.Slider($_('.stock-item-articles', el), {
-					arrows: {
-						next: '',
-						prev: ''
-					}
+				new onw.Slider($_('.stock-item-articles', el), {arrows:true
+					// arrows: {
+					// 	next: '',
+					// 	prev: ''
+					// }
 				})
 			})
 		}

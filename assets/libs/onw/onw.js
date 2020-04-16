@@ -126,6 +126,9 @@
 
             let i = 0, dir = (ix > idx) ? 'next' : 'prev'
 
+        	dir = (ix == 0 && idx == idxMax) ? 'next' :
+            (ix == idxMax && idx == 0) ? 'prev' : dir
+
             while (ix !== idx && i <= idxMax) {
                 move(dir)
                 i ++
