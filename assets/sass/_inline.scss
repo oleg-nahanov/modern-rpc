@@ -144,7 +144,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 h1, .h1 {
-	font-size: 56px;
+	//font-size: 56px;
 }
 
 h3, .h3 {
@@ -170,37 +170,56 @@ strong, .strong {
 .btn {
 	border: none;
 	text-decoration: none;
-	background: linear-gradient(180deg, #72CDF4 0%, #4C92B5 100%, #4A8EB1 100%);
-	border-radius: 6px;
-	display: inline-block;
-	color: $white;
-	font-weight: bold;
 	font-size: 18px;
-	line-height: 30px;
-	//letter-spacing: 0.03em;
-	padding: 5px 30px;
 	position: relative;
-	box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.2);
+	//box-shadow: 0px 15px 16px 0px rgba(0, 0, 0, 0.2);
 	transition: all 0.2s ease-out;
-	margin: 10px 0;
+	perspective: 100px;
+	margin: 10px 0 20px 0;
 	cursor: pointer;
 	&.btn-small {
-		font-size: 16px;
+		font-size: 14px;
 	}
-	&:hover {
-		background: linear-gradient(180deg, darken(#72CDF4, 5%) 0%, darken(#4C92B5, 5%) 100%, darken(#4A8EB1, 5%) 100%);
+	span {
+		background: linear-gradient(180deg, #72CDF4 0%, #4C92B5 100%, #4A8EB1 100%);
+		border-radius: 6px;
+		display: block;
+		color: $white;
+		font-weight: bold;
+		
+		line-height: 30px;
+		//letter-spacing: 0.03em;
+		padding: 5px 30px;
+		position: relative;
+		z-index: 2;
+		&:hover {
+			background: linear-gradient(180deg, darken(#72CDF4, 5%) 0%, darken(#4C92B5, 5%) 100%, darken(#4A8EB1, 5%) 100%);
+		}
 	}
 	&:before {
 		content: '';
 	    display: block;
 	    position: absolute;
-	    width: 96%;
+	    width: 100%;
 	    height: 12px;
-	    left: 2%;
-	    bottom: -5px;
+	    left: 0;
+	    bottom: -4px;
 	    z-index: -1;
 	    background: #466C7E;
-	    border-radius: 0 0 12px 12px;
+	    border-radius: 0 0 18px 18px;
+	}
+	&:after {
+		content: '';
+	    display: block;
+	    position: absolute;
+	    width: 98%;
+	    height: 12px;
+	    left: 1%;
+	    bottom: -15px;
+	    z-index: 0;
+	    background: linear-gradient(180deg, rgba(198, 198, 198, 0.95) 0%, rgba(128, 128, 128, 0.15) 100%);
+    	filter: blur(3px);
+	    transform: rotateX(40deg);
 	}
 }
 
@@ -364,6 +383,7 @@ strong, .strong {
 }
 
 .logo-name {
+	font-family: BebasNeue;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.3;
@@ -385,7 +405,8 @@ strong, .strong {
 	margin: 0 20px;
 	.address {
 		@extend %flex;
-		font-size: 18px;
+		font-family: BebasNeue;
+		font-size: 14px;
 		line-height: 1.3;
 		//letter-spacing: 0.04em;
 		color: $gray;
@@ -398,8 +419,10 @@ strong, .strong {
 	}
 	.email {
 		@extend %flex;
+		padding-left: 36px;
 		a {
-			font-size: 22px;
+			font-family: BebasNeue;
+			font-size: 18px;
 			line-height: 28px;
 			//letter-spacing: 0.04em;
 			color: $red;
@@ -423,9 +446,10 @@ strong, .strong {
 	align-items: flex-end;
 	.tel {
 		@extend %flex;
-		margin-bottom: 10px;
+		font-family: BebasNeue;
+		margin-bottom: 1px;
 		span {
-			font-size: 18px;
+			font-size: 14px;
 			line-height: 1;
 			//letter-spacing: 0.04em;
 			text-align: right;
@@ -433,7 +457,7 @@ strong, .strong {
 		color: $gray;
 		a {
 			font-weight: bold;
-			font-size: 32px;
+			font-size: 42px;
 			line-height: 1;
 			margin-left: 10px;
 			//margin-bottom: 8px;
@@ -479,6 +503,7 @@ strong, .strong {
 
 .home-title {
 	margin: 0 5% 0 40px;
+	width: 50%;
 }
 
 .home-desc {
@@ -523,7 +548,9 @@ strong, .strong {
 		button {
 			width: 100%;
 			font-size: 20px;
-			padding: 15px;
+			span {
+				padding: 12px 20px;
+			}
 		}
 	}
 	.agree {
